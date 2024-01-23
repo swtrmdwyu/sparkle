@@ -1,0 +1,26 @@
+@import url('./styles/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@font-face {
+  font-family: 'Fanlste';
+  src: url('./assets/fonts/fanlste.otf') format('opentype');
+}
+
+:root {
+  /* fonts */
+  --title-font: 'Fanlste', serif;
+  --text-font: 'Prompt', sans-serif;
+  --plan-font: 'Nanum Pen Script', cursive;
+
+  /* colors */
+  --primary-color: #F5F5F5;
+  --secondary-color: #0C1E22;
+  --tertiary-color: #EFEFEB;
+}
+
+body {
+  background-color: var(--primary-color)  ;
+  color: var(--secondary-color);
+  font-family: var(--text-font);
+  font-size: 16px;
+}
