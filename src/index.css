@@ -1,6 +1,7 @@
 @import url('./styles/reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
 @font-face {
   font-family: 'Fanlste';
   src: url('./assets/fonts/fanlste.otf') format('opentype');
@@ -10,7 +11,9 @@
   /* fonts */
   --title-font: 'Fanlste', serif;
   --text-font: 'Prompt', sans-serif;
+  --date-font: 'IBM Plex Sans', sans-serif;
   --plan-font: 'Nanum Pen Script', cursive;
+
 
   /* colors */
   --primary-color: #F5F5F5;
