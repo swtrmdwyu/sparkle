@@ -1,20 +1,24 @@
 import IDate from "../interfaces/IDate";
 
-
 function getCurrentData(): IDate {
+    const weekDays = [
+        'Domingo', 'Segunda-feira', 'Terça-feira', 
+        'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'
+    ];
+    const  months = [
+        'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+        'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+    ];
+      
     const currentDate = new Date();
-    const dateString = currentDate.toLocaleDateString();
-
 
     const date: IDate = {
         date: currentDate,
         day: currentDate.getDate(),
-        month: 'Mar',
-        year: 2024,
-        weekday: dateString.substring(0, 3)
+        month: months[currentDate.getMonth()],
+        year: currentDate.getFullYear(),
+        weekday: weekDays[currentDate.getDay()]
     }
-
-    console.log(date)
 
     return date;
 }
