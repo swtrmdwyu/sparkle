@@ -19,18 +19,10 @@ const ProfileContainer = styled.div`
 `;
 
 const ProfileImage = styled.img`
-    border: 3px solid var(--secondary-color);
     border-radius: 50%;
     cursor: pointer;
-    height: 52px;
-    width: 52px;
-`;
-
-const ProfileDecoration = styled.img`
-    position: absolute;
-    width: 1rem;
-    top: 10px;
-    right: -3px;
+    height: 3.438rem;
+    width: 3.438rem;
 `;
 
 const WelcomeContainer = styled.div`    
@@ -48,6 +40,7 @@ const WelcomeContainer = styled.div`
         font-size: .95rem;
         font-family: var(--date-font);
         font-weight: 700;
+        margin-top: .2rem;
         opacity: .6;
         text-transform: lowercase;
 
@@ -71,7 +64,6 @@ function Header() {
             </WelcomeContainer>
             <ProfileContainer>
                 <ProfileImage src={user.image} />
-                <ProfileDecoration src={sparkle} alt="" />
             </ProfileContainer>
         </StyledHeaderContainer>
     );

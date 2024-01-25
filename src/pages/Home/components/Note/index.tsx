@@ -16,20 +16,23 @@ const NoteContainer = styled.div`
 
 const PreviewContainer = styled.div`
     img {
-        width: .9rem;
+        width: 0.9rem;
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.16rem;
         font-weight: 700;
-        opacity: .7;
-        margin-bottom:.5rem;
+        opacity: 0.7;
+        margin-bottom: 0.5rem;
     }
 
     p {
-        font-size: .9rem;
-        margin-bottom: 1rem;
-        max-height: 3.7rem;
+        font-size: 0.9rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Número de linhas desejado */
+        -webkit-box-orient: vertical;
+        width: 75%;
     }
 `;
 
