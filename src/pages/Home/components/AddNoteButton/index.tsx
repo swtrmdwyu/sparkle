@@ -11,6 +11,7 @@ const AddButton = styled.button`
     display: flex;
     height: 3rem;
     justify-content: center;
+    opacity: .9;
     position: fixed;
     right: 1.2rem;
     width: 3rem;

@@ -4,6 +4,7 @@ import getCurrentData from "../../../../utils/getCurrentDate";
 import IDate from "../../../../interfaces/IDate";
 import sparkle from "../../../../assets/svg/sparkle.svg";
 import IUser from "../../../../interfaces/IUser";
+import Profile from "../../../../components/Profile";
 
 const StyledHeaderContainer = styled.header`
     align-items: center;
@@ -12,17 +13,6 @@ const StyledHeaderContainer = styled.header`
     justify-content: space-between;
     padding: 1rem 0;
     width: calc(100%);
-`;
-
-const ProfileContainer = styled.div`
-    position: relative;
-`;
-
-const ProfileImage = styled.img`
-    border-radius: 50%;
-    cursor: pointer;
-    height: 3.438rem;
-    width: 3.438rem;
 `;
 
 const WelcomeContainer = styled.div`    
@@ -62,9 +52,10 @@ function Header() {
                 <h1>Bem-vindo, <strong>{user.username}</strong></h1>
                 <span><img src={sparkle} /> {`${date.day} ${date.month.substring(0, 3)}, ${date.year}`}</span>
             </WelcomeContainer>
-            <ProfileContainer>
-                <ProfileImage src={user.image} />
-            </ProfileContainer>
+            <Profile 
+                src={user.image}
+                bordered={true}
+            />
         </StyledHeaderContainer>
     );
 }

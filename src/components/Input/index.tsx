@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 const StyledInput = styled.input<Props>`
-    border: 1px solid var(--secondary-color);
-    border-radius: 25px;
-    font-family: var(--text-font);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0);
+    font-family: $var(--text-font);
     height: ${(props: Props) => props.height ? props.height : '2.3rem'};
     width: ${(props: Props) => props.width ? `calc(${props.width} - 2rem)`: 'calc(100% - 2rem)'};
     padding: 0 1rem;
     outline: none;
+    transition: box-shadow .3s ease; 
 
     &:focus {
-        /* estilizar */
+        box-shadow: 0 0 0 2px var(--quartiary-color);
     }
 `;
 
